@@ -8,17 +8,7 @@ public class formaterTest {
     System.out.println("Pretty unformated code line2");
   }
 
-      public     static       void     fun11()
-  {
-    System
-            .
-            out
-            .
-            println(
-                    "Pretty unformated code line 1"
-            )
-    ;
-
-
+  public static void fun11() {
+    System.out.println("Pretty unformated code line 1");
   }
 }
