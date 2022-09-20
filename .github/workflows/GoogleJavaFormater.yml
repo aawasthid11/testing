@@ -1,24 +1,20 @@
-# Example workflow
-name: GoogleJavaFormater
+name: Google Java Formater
 
 on:
+  push:
   pull_request:
     types: [opened, reopened]
     branches:
       - master
       - main
+      - develop
 
 jobs:
 
   formatting:
     runs-on: ubuntu-latest
     steps:
-      - if: github.event_name != 'pull_request'
-        uses: actions/checkout@v2
-      - if: github.event_name == 'pull_request'
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
+      - uses: actions/checkout@v2 # v2 minimum required
       - uses: axel-op/googlejavaformat-action@v3
         with:
           args: "--set-exit-if-changed"
