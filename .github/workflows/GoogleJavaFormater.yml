@@ -2,9 +2,11 @@
 name: GoogleJavaFormater
 
 on:
-  push:
+  pull_requests:
+    types: [opened, reopened]
     branches:
       - master
+      - main
 
 jobs:
 
