@@ -1,10 +1,9 @@
+class user {
+  Integer userid;
+  Integer age;
+  String name;
 
-class user{
-    Integer userid;
-    Integer age;
-    String name;
-    user(Integer i)
-    {
-        this.userid =i*2;
-    }
+  user(Integer i) {
+    this.userid = i * 2;
+  }
 }
