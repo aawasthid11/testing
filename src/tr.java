@@ -1,4 +1,4 @@
 @FunctionalInterface
-public interface tr<T,R> {
-     R funny(T t);
+public interface tr<T, R> {
+  R funny(T t);
 }
